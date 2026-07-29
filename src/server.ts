@@ -10,7 +10,7 @@ const PORT = Number(process.env.PORT || '3000')
 
 // Configurar CORS para aceitar requisições do frontend
 app.use(cors({
-  origin: 'https://front-deploy-yre2.vercel.app/', // URL do seu frontend
+  origin: 'https://front-deploy-yre2.vercel.app', // URL do seu frontend
   credentials: true, // Permite enviar cookies
   methods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
