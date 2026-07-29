@@ -2,15 +2,21 @@
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./dist",
-    "module": "nodenext",
-    "target": "esnext",
+
+    "target": "ES2022",
+
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+
+    "esModuleInterop": true,
+
     "types": ["node"],
+
     "strict": true,
     "skipLibCheck": true,
     "strictPropertyInitialization": false,
+
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
-  },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+  }
 }
