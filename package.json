@@ -13,7 +13,7 @@
     "migration:revert": "npm run typeorm -- migration:revert -d src/config/dataSource.ts"    
   },
   "keywords": [],
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "cookie-parser": "^1.4.7",
