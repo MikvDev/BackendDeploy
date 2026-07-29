@@ -8,6 +8,13 @@ import { errorHandler } from './middlewares/errorHandler';
 const app: Application = express()
 const PORT = Number(process.env.PORT || '3000')
 
+
+const allowedOrigins = [
+  "https://front-deploy-yre2.vercel.app",
+  "https://front-deploy-yre2-jmlql485n-miguels-projects-eb5291df.vercel.app",
+];
+
+
 // Configurar CORS para aceitar requisições do frontend
 app.use(cors({
   origin: 'https://front-deploy-yre2.vercel.app/', // URL do seu frontend
