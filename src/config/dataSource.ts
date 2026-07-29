@@ -13,7 +13,7 @@ export const AppDataSource = new DataSource({
     username: DB_USER,
     password: DB_PASSWORD,
     database: DB_DATABASE,
-    entities: ['src/models/*.ts'],
+    entities: [__dirname + '/../models/*.{js,ts}'],
     synchronize: false, // Para deploy precisa ser falso
     logging: true,
     ssl:false
